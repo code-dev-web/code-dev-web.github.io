@@ -1,0 +1,33 @@
+:root {
+  --darkgreen: #608b2c;
+  --green: #8ac933;
+  --darkgrey: #23272a;
+  --mdgrey: #464a4e;
+  --lightgrey: #6f7274;
+  --white: #f0f0f0;
+  --black: #141414;
+}
+
+.primary-bg {
+  background: var(--darkgrey);
+}
+.secondary-bg {
+  background: var(--darkgreen);
+}
+.md-bg {
+  background: var(--mdgrey);
+}
+.primary-font {
+  color: var(--green);
+}
+.secondary-font {
+  color: var(--white);
+}
+.divider {
+  border: 1px solid var(--lightgrey);
+  border-radius: 5px;
+}
+.primary-border {
+  border: 1px solid var(--darkgreen);
+  border-radius: 5px;
+}

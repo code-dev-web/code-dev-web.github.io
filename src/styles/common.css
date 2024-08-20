@@ -1,0 +1,119 @@
+/* Width */
+.w-100 {
+  width: 100%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.w-33 {
+  width: 33.33%;
+}
+
+/* Padding */
+.p-xs {
+  padding: 0.25rem;
+}
+.p-sm {
+  padding: 0.5rem;
+}
+.p-md {
+  padding: 0.75rem;
+}
+.p-lg {
+  padding: 1rem;
+}
+.p-xl {
+  padding: 1.25rem;
+}
+.p-xxl {
+  padding: 1.5rem;
+}
+
+.m-xs {
+  padding: 0.25rem;
+}
+.m-sm {
+  padding: 0.5rem;
+}
+.m-md {
+  padding: 0.75rem;
+}
+.m-lg {
+  padding: 1rem;
+}
+.m-xl {
+  padding: 1.25rem;
+}
+.m-xxl {
+  padding: 1.5rem;
+}
+
+/* Container */
+.container {
+  display: flex;
+}
+.container-flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.code-block {
+  background-color: var(--darkgreen);
+  color: var(--white);
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  overflow-x: auto;
+}
+
+/* Title */
+
+.page-title {
+  padding: 1rem;
+  font-weight: bold;
+}
+
+/* Copy paste */
+.copy-icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+.copy-icon:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  background-color: var(--darkgrey);
+  border-radius: 4px;
+  box-shadow: 0 0 0 2px #555;
+}
+
+.copy-icon:after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 0 2px #555;
+}
