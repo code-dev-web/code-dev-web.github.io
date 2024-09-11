@@ -35,7 +35,9 @@ export const ToDoList = () => {
           onChange={(e) => setTask(e.target.value)}
           placeholder="Add a new task..."
         />
-        <button onClick={addTask}>Add Task</button>
+        <button className="primary-button" onClick={addTask}>
+          Add Task
+        </button>
       </div>
       <ul className="secondary-font">
         {todos.map((todo, index) => (
@@ -50,7 +52,10 @@ export const ToDoList = () => {
             >
               {todo.text}
             </span>
-            <button className="primary-font" onClick={() => removeTask(index)}>
+            <button
+              className="secondary-button"
+              onClick={() => removeTask(index)}
+            >
               Remove
             </button>
           </li>

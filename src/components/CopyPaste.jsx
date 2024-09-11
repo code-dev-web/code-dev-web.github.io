@@ -16,7 +16,9 @@ export const CopyPaste = ({ id }) => {
     document.execCommand("copy");
     document.body.removeChild(textarea);
   };
-  return <div className="copy-icon" onClick={copyToClipboard} />;
+  return (
+    <div className="copy-icon" title="Copy/Paste" onClick={copyToClipboard} />
+  );
 };
 
 export const CopyPasteContainer = ({ id, type, content }) => {
