@@ -9,7 +9,7 @@ import { PageNotFound } from "./pages/PageNotFound";
 function App() {
   return (
     <WrapperContainer className="primary-bg">
-      <Router basename="react-tutorial">
+      <Router basename="/">
         <Navbar />
         <Container>
           <Sidebar />
