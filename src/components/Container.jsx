@@ -18,8 +18,11 @@ export const WrapperContainer = ({
   children,
   className = "",
   styleProps = {},
-}) => (
-  <div className={`${className}`} style={{ ...styleProps }}>
-    {children}
-  </div>
-);
+}) => {
+  const classNames = className ? { className: `${className}` } : {};
+  return (
+    <div style={{ ...styleProps }} {...classNames}>
+      {children}
+    </div>
+  );
+};

@@ -17,17 +17,24 @@ export const ToDoApp = () => {
         <SubTitle title={CONSTANTS.OVERVIEW.TODO_APP} />
         <hr className="divider" />
         <Container styleProps={{ justifyContent: "center" }}>
-          <WrapperContainer className="w-75">
+          <WrapperContainer className="w-75 w-m-90">
             <Text text={CONSTANTS.STEPS} />
             <StepBuilder data={steps} />
           </WrapperContainer>
         </Container>
         <hr className="divider" />
-        <Container styleProps={{ columnGap: "1rem" }}>
-          <WrapperContainer className="w-50 primary-border">
+        <Container
+          styleProps={{
+            columnGap: "1rem",
+            rowGap: "1rem",
+            flexWrap: "wrap",
+            justifyContent: "center",
+          }}
+        >
+          <WrapperContainer className="w-45 w-m-75 primary-border ">
             <ToDoList />
           </WrapperContainer>
-          <WrapperContainer className="w-50 primary-border p-xs secondary-font">
+          <WrapperContainer className="w-45 w-m-75 primary-border p-xs secondary-font">
             <CopyPasteContainer
               type={CONSTANTS.REACT}
               id="finalTodoList"

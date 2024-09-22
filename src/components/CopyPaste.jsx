@@ -34,9 +34,11 @@ export const CopyPasteContainer = ({ id, type, content }) => {
         {type ? <i>{type}</i> : ""}
         <CopyPaste id={id} />
       </Container>
-      <pre className="code-block" id={id}>
-        {content}
-      </pre>
+      <div className="code-block">
+        <span id={id} style={{ whiteSpace: "pre-line" }}>
+          {content}
+        </span>
+      </div>
     </WrapperContainer>
   ) : (
     ""

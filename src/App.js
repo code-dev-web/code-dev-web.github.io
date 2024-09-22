@@ -13,31 +13,33 @@ function App() {
         <Navbar />
         <Container>
           <Sidebar />
-          <Routes>
-            <Route path="/" element={<ToDoApp />} />
-            <Route
-              path="/coming-soon"
-              element={
-                <Container
-                  styleProps={{
-                    width: "100%",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  <h3 className=" p-lg secondary-font">
-                    Coming Soon.....{" "}
-                    <Link to="/">
-                      <span className="primary-font ph-lg code-dev">
-                        {"< / >"}{" "}
-                      </span>
-                    </Link>
-                  </h3>
-                </Container>
-              }
-            />
-            <Route path="*" element={<PageNotFound />} />
-          </Routes>
+          <Container className="page-display" styleProps={{ width: "100%" }}>
+            <Routes>
+              <Route path="/" element={<ToDoApp />} />
+              <Route
+                path="/coming-soon"
+                element={
+                  <Container
+                    styleProps={{
+                      width: "100%",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <h3 className=" p-lg secondary-font">
+                      Coming Soon.....{" "}
+                      <Link to="/">
+                        <span className="primary-font ph-lg code-dev">
+                          {"< / >"}{" "}
+                        </span>
+                      </Link>
+                    </h3>
+                  </Container>
+                }
+              />
+              <Route path="*" element={<PageNotFound />} />
+            </Routes>
+          </Container>
         </Container>
       </Router>
     </WrapperContainer>

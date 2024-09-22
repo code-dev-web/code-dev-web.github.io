@@ -1,5 +1,6 @@
 @import url("./styles/colors.css");
 @import url("./styles/common.css");
+@import url("./styles/layout.css");
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 /* Set the base font size */
@@ -44,6 +45,39 @@ h5 {
 h6 {
   font-size: 0.875rem; /* 12.25px */
   margin-bottom: 0.5rem; /* 7px */
+}
+
+@media (max-width: 575.98px) {
+  html {
+    font-size: 12.25px; /* 1rem = 12.25px */
+  }
+  body {
+    font-size: 0.875rem; /* 12.25px */
+  }
+
+  h1 {
+    font-size: 2rem; /* 28px */
+  }
+
+  h2 {
+    font-size: 1.75rem; /* 24.5px */
+  }
+
+  h3 {
+    font-size: 1.25rem; /* 17.5px */
+  }
+
+  h4 {
+    font-size: 1rem; /* 14px */
+  }
+
+  h5 {
+    font-size: 0.875rem; /* 12.25px */
+  }
+
+  h6 {
+    font-size: 0.75rem; /* 10.5px */
+  }
 }
 
 /* Responsive typography adjustments */

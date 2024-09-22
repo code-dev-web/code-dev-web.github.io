@@ -3,7 +3,7 @@ import { Container, WrapperContainer } from "./Container";
 import { NavLink } from "react-router-dom";
 
 export const Sidebar = () => {
-  const [isCollapse, setCollapse] = useState(false);
+  const [isCollapse, setCollapse] = useState(window.innerWidth <= 575.98);
   return (
     <WrapperContainer
       className={`sidebar ${
@@ -30,7 +30,7 @@ export const Sidebar = () => {
           className={`collapse ${isCollapse ? "collapse-transform" : ""}`}
           onClick={() => setCollapse((prevState) => !prevState)}
         >
-          <i className="fa-solid fa-chevron-left" />
+          <i className="fa-solid fa-chevron-left fs-lg" />
         </div>
       </Container>
       <NavLink
@@ -44,7 +44,7 @@ export const Sidebar = () => {
           styleProps={{ alignItems: "center", justifyContent: "space-between" }}
         >
           <div
-            className={` ${
+            className={`sidebar-label ${
               !isCollapse ? "show-visibility" : "hide-visibility"
             }`}
           >
@@ -66,14 +66,14 @@ export const Sidebar = () => {
           styleProps={{ alignItems: "center", justifyContent: "space-between" }}
         >
           <div
-            className={` ${
+            className={`sidebar-label ${
               !isCollapse ? "show-visibility" : "hide-visibility"
             }`}
           >
             Coming soon...
           </div>
           <div className="list-icon">
-            <i class="fa-solid fa-plus" title="Coming Soon" />
+            <i className="fa-solid fa-plus" title="Coming Soon" />
           </div>
         </Container>
       </NavLink>
