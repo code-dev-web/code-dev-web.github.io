@@ -77,6 +77,50 @@ export const Sidebar = () => {
           </div>
         </Container>
       </NavLink>
+      <NavLink
+        to="/about-us"
+        className={({ isActive }) => (isActive ? "active-link" : "")}
+      >
+        <Container
+          className={`p-sm secondary-font fs-sm list-item ${
+            isCollapse ? "list-item-collapse" : ""
+          }`}
+          styleProps={{ alignItems: "center", justifyContent: "space-between" }}
+        >
+          <div
+            className={`sidebar-label ${
+              !isCollapse ? "show-visibility" : "hide-visibility"
+            }`}
+          >
+            About Us
+          </div>
+          <div className="list-icon">
+            <i className="fa-solid fa-users" title="About Us" />
+          </div>
+        </Container>
+      </NavLink>
+      <NavLink
+        to="/privacy-policy"
+        className={({ isActive }) => (isActive ? "active-link" : "")}
+      >
+        <Container
+          className={`p-sm secondary-font fs-sm list-item ${
+            isCollapse ? "list-item-collapse" : ""
+          }`}
+          styleProps={{ alignItems: "center", justifyContent: "space-between" }}
+        >
+          <div
+            className={`sidebar-label ${
+              !isCollapse ? "show-visibility" : "hide-visibility"
+            }`}
+          >
+            Privacy Policy
+          </div>
+          <div className="list-icon">
+            <i className="fa-solid fa-file-shield" title="Privacy Policy" />
+          </div>
+        </Container>
+      </NavLink>
     </WrapperContainer>
   );
 };

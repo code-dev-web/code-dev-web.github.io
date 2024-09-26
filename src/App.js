@@ -5,6 +5,8 @@ import { Navbar } from "./components/Navbar";
 import { Sidebar } from "./components/Sidebar";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { PageNotFound } from "./pages/PageNotFound";
+import { PrivacyPolicy } from "./pages/PrivacyPolicy";
+import { AboutUs } from "./pages/AboutUs";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
           <Container className="page-display" styleProps={{ width: "100%" }}>
             <Routes>
               <Route path="/" element={<ToDoApp />} />
+              <Route path="/about-us" element={<AboutUs />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route
                 path="/coming-soon"
                 element={
